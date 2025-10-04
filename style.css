@@ -2,13 +2,26 @@
 :root {
   --primary-red: #ff3b30;
   --midnight-blue: #0d1b2a;
-  --light-gray: #e5e5e5;
+  --light-gray: #cbcbcb;
   --white: #ffffff;
-  --dark: #1a1a1a;
+  --dark: #050505;
+  --secondary-dark: #1a1a1a;
 }
 
 body {
-  background-color: var(--dark);
+  background-color: var(--secondary-dark);
+  color: var(--white);
+}
+
+p {
+  color: var(--light-gray);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--white);
 }
 
