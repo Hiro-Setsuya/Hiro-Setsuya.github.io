@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--dark);
+  color: var(--white);
 }
 
 .image-placeholder {
