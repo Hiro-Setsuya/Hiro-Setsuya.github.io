@@ -71,7 +71,8 @@ i.icon {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.project-card:hover,
+.image-placeholder:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
