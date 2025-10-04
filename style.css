@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
 body {
   background-color: var(--secondary-dark);
   color: var(--white);
@@ -50,4 +51,27 @@ i.icon {
   box-sizing: border-box;
   flex-shrink: 0;
   aspect-ratio: 1/1;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card p {
+  flex-grow: 1;
+}
+
+.project-card a.btn {
+  align-self: center;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
