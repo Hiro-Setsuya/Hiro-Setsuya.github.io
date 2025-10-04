@@ -8,19 +8,24 @@
   --secondary-dark: #1a1a1a;
 }
 
+/* Smooth scrolling and scroll padding for fixed header */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
 
+/* Body background and text color */
 body {
   background-color: var(--secondary-dark);
   color: var(--white);
 }
 
+/* Paragraph text color */
 p {
   color: var(--light-gray);
 }
+
+/* Headings color */
 h1,
 h2,
 h3,
@@ -30,10 +35,12 @@ h6 {
   color: var(--white);
 }
 
+/* Icon color */
 i.icon {
   color: var(--primary-red);
 }
 
+/* Image placeholder styling */
 .image-placeholder {
   width: 100%;
   max-width: 450px;
@@ -49,6 +56,7 @@ i.icon {
   padding: 0;
 }
 
+/* Image inside placeholder */
 .image-placeholder img {
   width: 100%;
   height: 100%;
@@ -56,24 +64,29 @@ i.icon {
   object-position: center;
 }
 
+/* Project card layout */
 .project-card {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
+/* Project card paragraph grows to fill space */
 .project-card p {
   flex-grow: 1;
 }
 
+/* Center button in project card */
 .project-card a.btn {
   align-self: center;
 }
 
+/* Project card transition effects */
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for project card and image placeholder */
 .project-card:hover,
 .image-placeholder:hover {
   transform: translateY(-1px);
