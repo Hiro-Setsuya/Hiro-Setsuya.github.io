@@ -64,11 +64,22 @@ i.icon {
   object-position: center;
 }
 
+/* Skills card styling */
+.skills-card {
+  background-color: var(--dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skills-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
 /* Project card layout */
 .project-card {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: var(--secondary-dark);
 }
 
 /* Project card paragraph grows to fill space */
