@@ -8,6 +8,10 @@
   --secondary-dark: #1a1a1a;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 body {
   background-color: var(--secondary-dark);
   color: var(--white);
