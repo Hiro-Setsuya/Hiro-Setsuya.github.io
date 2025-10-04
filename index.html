@@ -17,6 +17,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/hiro.ico" />
 
@@ -25,76 +31,60 @@
   </head>
 
   <body>
-    <header>
-      <!-- Navbar -->
-      <div class="container-fluid p-3">
-        <div class="row">
-          <div class="col-3">
-            <a href="#" class="navbar" style="text-decoration: none"
-              >Hiro Setsuya</a
-            >
-          </div>
-          <div class="col-9">
-            <nav class="navbar navbar-expand-md">
-              <!-- Hamburger button for mobile -->
-              <button
-                class="navbar-toggler ms-auto"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <!-- Collapsible navigation -->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav ms-auto gap-5">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+    <header class="py-3 border-bottom border-secondary">
+      <nav class="container navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand fw-bold text-danger" href="#">Hiro Setsuya</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
-    <main class="d-flex flex-column gap-4 mt-4">
-      <!-- Main content -->
-      <div class="container introduction">
-        <div class="row g-4">
-          <div class="col-md-7 order-md-1 order-2 d-flex flex-column gap-3">
-            <!-- Content goes here -->
-            <h6>Hello, My Name is</h6>
-            <h1>Adrian Vincent Javillo</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              reprehenderit dolores nam unde assumenda accusamus laborum veniam
-              id, rem, cupiditate nisi nemo, totam asperiores magni a sint
-              accusantium nobis! Dolorem.
+    <main>
+      <!-- Introduction Section -->
+      <section class="py-5">
+        <div
+          class="container d-flex flex-column flex-lg-row align-items-center gap-5"
+        >
+          <div class="flex-fill">
+            <h6 class="text-danger">Hello, My Name Is</h6>
+            <h1 class="fw-bold">Adrian Vincent Javillo</h1>
+            <p class="lead text-secondary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptates nostrum temporibus maxime! Nisi nihil soluta eius!
+              Aliquid facilis odit fugit explicabo quam dolorem esse, ex quod,
+              sunt obcaecati libero quo?
             </p>
+            <a href="#contact" class="btn btn-danger mt-3">Contact Me</a>
           </div>
-          <div
-            class="col-md-5 col-12 justify-content-center d-flex order-md-2 order-1"
-          >
+          <div class="flex-fill text-center">
             <div class="image-placeholder"></div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <!-- Footer -->
