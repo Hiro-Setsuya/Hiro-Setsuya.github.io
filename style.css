@@ -25,6 +25,10 @@ h6 {
   color: var(--white);
 }
 
+i.icon {
+  color: var(--primary-red);
+}
+
 .image-placeholder {
   width: 300px;
   height: 300px;
