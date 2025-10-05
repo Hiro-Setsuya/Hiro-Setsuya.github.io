@@ -92,26 +92,42 @@ i.icon {
 
 /* Image placeholder styling */
 .image-placeholder {
+  position: relative;
   width: 100%;
   max-width: 450px;
   aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, var(--primary-red), var(--midnight-blue));
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, var(--secondary-dark), var(--dark));
   border-radius: 1rem;
+  border: 2px solid rgba(255, 34, 22, 0.7);
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
+  box-shadow: 0 0 6px rgba(255, 34, 22, 0.4), 0 0 12px rgba(255, 34, 22, 0.25),
+    inset 0 0 6px rgba(255, 34, 22, 0.15);
 }
 
-/* Image inside placeholder */
+/* Elegant glow ring — subtle outer neon */
+.image-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 34, 22, 0.4);
+  box-shadow: 0 0 10px rgba(255, 34, 22, 0.3), 0 0 20px rgba(255, 34, 22, 0.2);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Image inside */
 .image-placeholder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 1rem;
 }
 
 /* Skills card styling */
