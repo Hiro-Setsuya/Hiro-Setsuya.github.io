@@ -78,6 +78,18 @@ i.icon {
   color: var(--primary-red);
 }
 
+/* Typing text effect */
+#typing-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Image placeholder styling */
 .image-placeholder {
   width: 100%;
