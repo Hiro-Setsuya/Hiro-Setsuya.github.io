@@ -104,3 +104,11 @@ i.icon {
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
+
+/* Button styling */
+.btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
