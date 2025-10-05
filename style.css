@@ -35,6 +35,37 @@ h6 {
   color: var(--white);
 }
 
+/* Navbar link underline effect */
+.nav-link {
+  position: relative;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+/* The animated underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-red);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+/* Expand underline on hover or when active */
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Slightly fade the text on hover */
+.nav-link:hover {
+  color: var(--primary-red);
+}
+
 /* Icon color */
 i.icon {
   color: var(--primary-red);
@@ -111,4 +142,28 @@ i.icon {
   color: var(--dark);
   transform: scale(1.02);
   transition: all 0.3s ease;
+}
+
+/* Fade-in-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base state (invisible) */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* When element is visible */
+.fade-in-up.visible {
+  animation: fadeInUp 0.8s ease-out forwards;
 }
