@@ -38,17 +38,24 @@ h6 {
 /* Navbar link underline effect */
 .nav-link {
   position: relative;
+  display: inline-flex;
+  align-items: center;
   color: var(--white);
+  gap: 5px; /* space between icon and text */
   transition: color 0.3s ease;
+}
+
+.nav-link span {
+  position: relative;
 }
 
 /* The animated underline */
 .nav-link::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
+  left: 55%;
+  bottom: -4px;
+  width: 0;
   height: 2px;
   background-color: var(--primary-red);
   transform: translateX(-50%);
