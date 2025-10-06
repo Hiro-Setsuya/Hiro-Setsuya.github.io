@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeElements.forEach((el) => fadeObserver.observe(el));
 
   // Typing effect for role titles
-  const roles = ["Web Developer", "Backend Developer", "Third-Year Student"];
+  const roles = ["Web Developer", "Full-Stack Developer", "Third-Year Student"];
   const typingText = document.getElementById("typing-text");
 
   let roleIndex = 0;
