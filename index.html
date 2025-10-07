@@ -35,49 +35,71 @@
   </head>
 
   <body>
-    <!-- Header and Navigation Bar -->
-    <header class="py-2 border-bottom border-secondary fixed-top bg-black">
-      <nav class="container navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand fw-bold" style="color: var(--white)" href="#home"
-          >Hiro Setsuya</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav gap-3">
+<!-- Header and Navigation Bar -->
+<header class="py-2 border-bottom border-secondary fixed-top bg-black">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" style="color: var(--white)" href="#home">
+        Hiro Setsuya
+      </a>
+
+      <!-- Hamburger toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end text-bg-dark"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            Hiro Setsuya
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3">
             <li class="nav-item">
               <a class="nav-link" href="#home">
-                <i class="bi bi-house-door"></i><span> Home</span></a
-              >
+                <i class="bi bi-house-door"></i><span> Home</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">
-                <i class="bi bi-person"></i><span> About</span></a
-              >
+                <i class="bi bi-person"></i><span> About</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">
-                <i class="bi bi-tools"></i><span> Skills</span></a
-              >
+                <i class="bi bi-tools"></i><span> Skills</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">
-                <i class="bi bi-briefcase"></i> <span> Projects</span></a
-              >
+                <i class="bi bi-briefcase"></i><span> Projects</span>
+              </a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
+</header>
     <main class="mt-5">
       <!-- Introduction Section -->
       <section class="py-5 fade-in-up" id="home">

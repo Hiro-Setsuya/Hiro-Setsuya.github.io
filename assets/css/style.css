@@ -35,6 +35,13 @@ h6 {
   color: var(--white);
 }
 
+.offcanvas-end {
+  width: 40vw !important;
+  max-width: 400px;
+  background-color: var(--dark) !important;
+  border-left: 2px solid var(--primary-red);
+}
+
 /* Navbar link underline effect */
 .nav-link {
   position: relative;
