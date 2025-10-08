@@ -36,108 +36,108 @@
 
   <body>
     <!-- Header and Navigation Bar -->
-<header class="py-2 border-bottom border-secondary fixed-top bg-black">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <!-- Brand -->
-      <a class="navbar-brand fw-bold" style="color: var(--white)" href="#home">
-        Hiro Setsuya
-      </a>
+    <header class="py-2 border-bottom border-secondary fixed-top bg-black">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a class="navbar-brand fw-bold" style="color: var(--white)" href="#home">
+            Hiro Setsuya
+          </a>
 
-      <!-- Regular navbar collapse for large screens -->
-      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">
-              <i class="bi bi-house-door"></i><span> Home</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">
-              <i class="bi bi-person"></i><span> About</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">
-              <i class="bi bi-tools"></i><span> Skills</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">
-              <i class="bi bi-briefcase"></i><span> Projects</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="theme-toggle">
-              <i class="bi bi-moon"></i><span> Dark</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+          <!-- Regular navbar collapse for large screens -->
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">
+                  <i class="bi bi-house-door"></i><span> Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  <i class="bi bi-person"></i><span> About</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                  <i class="bi bi-tools"></i><span> Skills</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">
+                  <i class="bi bi-briefcase"></i><span> Projects</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="theme-toggle">
+                    <i class="bi bi-sun theme-icon"></i><span class="theme-text">Light</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-      <!-- Hamburger toggler for mobile -->
-      <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Offcanvas for mobile -->
-      <div
-        class="offcanvas offcanvas-end text-bg-dark d-lg-none"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-        data-bs-scroll="true"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hiro Setsuya</h5>
+          <!-- Hamburger toggler for mobile -->
           <button
+            class="navbar-toggler d-lg-none"
             type="button"
-            class="btn-close btn-close-white"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="offcanvas-body">
-          <ul class="navbar-nav gap-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">
-                <i class="bi bi-house-door"></i><span> Home</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">
-                <i class="bi bi-person"></i><span> About</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">
-                <i class="bi bi-tools"></i><span> Skills</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">
-                <i class="bi bi-briefcase"></i><span> Projects</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="theme-toggle-mobile">
-                <i class="bi bi-moon"></i><span> Dark</span>
-              </a>
-            </li>
-          </ul>
+          <!-- Offcanvas for mobile -->
+          <div
+            class="offcanvas offcanvas-end text-bg-dark d-lg-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            data-bs-scroll="true"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hiro Setsuya</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">
+                    <i class="bi bi-house-door"></i><span> Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">
+                    <i class="bi bi-person"></i><span> About</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">
+                    <i class="bi bi-tools"></i><span> Skills</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">
+                    <i class="bi bi-briefcase"></i><span> Projects</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="theme-toggle-mobile">
+                    <i class="bi bi-sun theme-icon"></i><span id="theme-text">Light</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
-</header>
+      </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="mt-5">

@@ -42,4 +42,38 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   type();
+
+  // Theme toggle functionality
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeToggleMobile = document.getElementById("theme-toggle-mobile");
+
+  let isDark = true;
+
+  function updateTheme() {
+    const icon = isDark ? "bi-sun" : "bi-moon";
+    const text = isDark ? "Light" : "Dark";
+
+    const icons = document.querySelectorAll(".theme-icon");
+    icons.forEach((i) => {
+      i.className = `bi ${icon} theme-icon`;
+    });
+
+    const texts = document.querySelectorAll(".theme-text, #theme-text");
+    texts.forEach((t) => {
+      t.textContent = text;
+    });
+
+    document.body.classList.toggle("dark-theme", isDark);
+    document.body.classList.toggle("light-theme", !isDark);
+  }
+
+  function toggleTheme() {
+    isDark = !isDark;
+    updateTheme(); // apply the new theme
+  }
+
+  themeToggle.addEventListener("click", toggleTheme);
+  themeToggleMobile.addEventListener("click", toggleTheme);
+
+  updateTheme();
 });
