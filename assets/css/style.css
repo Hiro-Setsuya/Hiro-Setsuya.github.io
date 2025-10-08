@@ -42,6 +42,11 @@ h6 {
   border-left: 2px solid var(--primary-red);
 }
 
+.offcanvas-body {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 /* Navbar link underline effect */
 .nav-link {
   position: relative;
