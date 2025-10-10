@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleTheme() {
     isDark = !isDark;
-    updateTheme(); // apply the new theme
+    updateTheme();
   }
 
   themeToggle.addEventListener("click", toggleTheme);

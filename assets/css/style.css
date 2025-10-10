@@ -166,12 +166,31 @@ i.icon {
   border-radius: 1rem;
 }
 
+/* Tech card styling */
+.tech-card {
+  background-color: var(--secondary-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Tech card hover effect */
+.tech-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
 /* Skills card styling */
 .skills-card {
   background-color: var(--dark);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Skills card hover effect */
 .skills-card:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);

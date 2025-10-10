@@ -32,6 +32,12 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Devicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
 
   <body>
@@ -40,12 +46,19 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <!-- Brand -->
-          <a class="navbar-brand fw-bold" style="color: var(--white)" href="#home">
+          <a
+            class="navbar-brand fw-bold"
+            style="color: var(--white)"
+            href="#home"
+          >
             Hiro Setsuya
           </a>
 
           <!-- Regular navbar collapse for large screens -->
-          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav gap-3">
               <li class="nav-item">
                 <a class="nav-link" href="#home">
@@ -69,7 +82,8 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="theme-toggle">
-                    <i class="bi bi-sun theme-icon"></i><span class="theme-text">Light</span>
+                  <i class="bi bi-sun theme-icon"></i
+                  ><span class="theme-text">Light</span>
                 </a>
               </li>
             </ul>
@@ -96,7 +110,9 @@
             data-bs-scroll="true"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hiro Setsuya</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Hiro Setsuya
+              </h5>
               <button
                 type="button"
                 class="btn-close btn-close-white"
@@ -129,7 +145,8 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="theme-toggle-mobile">
-                    <i class="bi bi-sun theme-icon"></i><span id="theme-text">Light</span>
+                    <i class="bi bi-sun theme-icon"></i
+                    ><span id="theme-text">Light</span>
                   </a>
                 </li>
               </ul>
@@ -182,17 +199,15 @@
                 >
                   <i class="bi bi-instagram"></i>
                 </a>
-                  <a
-                    href="https://www.threads.com/@hiro.setsuya"
-                    class="btn btn-sm rounded-circle me-2"
-                    role="button"
-                    aria-label="Threads"
-                    target="_blank"
-                  >
-                    <i class="bi bi-threads"></i>
-                  </a>  
+                <a
+                  href="https://www.threads.com/@hiro.setsuya"
+                  class="btn btn-sm rounded-circle me-2"
+                  role="button"
+                  aria-label="Threads"
+                  target="_blank"
+                >
+                  <i class="bi bi-threads"></i>
                 </a>
-              </a>
                 <a
                   href="https://github.com/Hiro-Setsuya"
                   class="btn btn-sm rounded-circle me-2"
@@ -270,62 +285,131 @@
                 totam placeat magni enim eveniet. Repellendus neque quaerat
                 atque iusto magnam, eveniet eum.
               </p>
-              <h5 class="mt-4 mb-3 fw-bold" style="color: var(--primary-red)">
-                <i class="bi bi-layers"></i> Tech Stack
-              </h5>
-              <!-- Tech Stack Icons -->
-              <div
-                class="row row-cols-3 row-cols-md-4 row-cols-lg-5 g-3 text-center"
+              <!-- Tech Stack Section -->
+              <section
+                class="py-5 fade-in-up"
+                style="background-color: var(--dark)"
+                id="techstack"
               >
-                <div class="col">
-                  <i class="bi bi-filetype-html fs-1 text-danger"></i>
-                  <p class="small mb-0">HTML5</p>
+                <div class="container">
+                  <h5 style="color: var(--primary-red)">
+                    <i class="bi bi-layers"></i> Tech Stack
+                  </h5>
+                  <h2 class="fw-bold mb-4">What I Work With</h2>
+
+                  <div class="row g-4">
+                    <!-- Front-End Card -->
+                    <div class="col-12 col-md-6 col-lg-6 d-flex">
+                      <div class="p-4 rounded text-center tech-card flex-fill">
+                        <h5 class="fw-bold mb-3 text-light">
+                          <i class="bi bi-palette"></i> Front-End
+                        </h5>
+                        <div
+                          class="d-flex flex-wrap justify-content-center gap-3"
+                        >
+                          <div>
+                            <i class="devicon-html5-plain colored fs-1"></i>
+                            <p class="small mb-0">HTML5</p>
+                          </div>
+                          <div>
+                            <i class="devicon-css3-plain colored fs-1"></i>
+                            <p class="small mb-0">CSS3</p>
+                          </div>
+                          <div>
+                            <i
+                              class="devicon-javascript-plain colored fs-1"
+                            ></i>
+                            <p class="small mb-0">JavaScript</p>
+                          </div>
+                          <div>
+                            <i class="devicon-bootstrap-plain colored fs-1"></i>
+                            <p class="small mb-0">Bootstrap</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Back-End Card -->
+                    <div class="col-12 col-md-6 col-lg-6 d-flex">
+                      <div class="p-4 rounded text-center tech-card flex-fill">
+                        <h5 class="fw-bold mb-3" style="color: var(--white)">
+                          <i class="bi bi-gear"></i> Back-End
+                        </h5>
+                        <div
+                          class="d-flex flex-wrap justify-content-center gap-3"
+                        >
+                          <div>
+                            <i class="devicon-nodejs-plain colored fs-1"></i>
+                            <p class="small mb-0">Node.js</p>
+                          </div>
+                          <div>
+                            <i class="devicon-flask-original colored fs-1"></i>
+                            <p class="small mb-0">Flask</p>
+                          </div>
+                          <div>
+                            <i class="devicon-mysql-plain colored fs-1"></i>
+                            <p class="small mb-0">MySQL</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Programming Languages Card -->
+                    <div class="col-12 col-md-6 col-lg-6 d-flex">
+                      <div class="p-4 rounded text-center tech-card flex-fill">
+                        <h5 class="fw-bold mb-3 text-light">
+                          <i class="bi bi-terminal"></i> Programming Languages
+                        </h5>
+                        <div
+                          class="d-flex flex-wrap justify-content-center gap-3"
+                        >
+                          <div>
+                            <i class="devicon-c-plain colored fs-1"></i>
+                            <p class="small mb-0">C</p>
+                          </div>
+                          <div>
+                            <i class="devicon-cplusplus-plain colored fs-1"></i>
+                            <p class="small mb-0">C++</p>
+                          </div>
+                          <div>
+                            <i class="devicon-python-plain colored fs-1"></i>
+                            <p class="small mb-0">Python</p>
+                          </div>
+                          <div>
+                            <i class="devicon-java-plain colored fs-1"></i>
+                            <p class="small mb-0">Java</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Tools Card -->
+                    <div class="col-12 col-md-6 col-lg-6 d-flex">
+                      <div class="p-4 rounded text-center tech-card flex-fill">
+                        <h5 class="fw-bold mb-3 text-light">
+                          <i class="bi bi-tools"></i> Tools
+                        </h5>
+                        <div
+                          class="d-flex flex-wrap justify-content-center gap-3"
+                        >
+                          <div>
+                            <i class="devicon-git-plain colored fs-1"></i>
+                            <p class="small mb-0">Git</p>
+                          </div>
+                          <div>
+                            <i class="devicon-github-original colored fs-1"></i>
+                            <p class="small mb-0">GitHub</p>
+                          </div>
+                          <div>
+                            <i class="devicon-vscode-plain colored fs-1"></i>
+                            <p class="small mb-0">VS Code</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col">
-                  <i class="bi bi-filetype-css fs-1 text-primary"></i>
-                  <p class="small mb-0">CSS3</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-filetype-js fs-1 text-warning"></i>
-                  <p class="small mb-0">JavaScript</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-terminal fs-1 text-info"></i>
-                  <p class="small mb-0">C</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-terminal fs-1 text-light"></i>
-                  <p class="small mb-0">C++</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-cup-hot fs-1 text-success"></i>
-                  <p class="small mb-0">Java</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-filetype-py fs-1 text-info"></i>
-                  <p class="small mb-0">Python</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-database fs-1 text-success"></i>
-                  <p class="small mb-0">MySQL</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-bootstrap fs-1 text-purple"></i>
-                  <p class="small mb-0">Bootstrap</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-node-plus fs-1 text-success"></i>
-                  <p class="small mb-0">Node.js</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-git fs-1 text-danger"></i>
-                  <p class="small mb-0">Git</p>
-                </div>
-                <div class="col">
-                  <i class="bi bi-github fs-1 text-light"></i>
-                  <p class="small mb-0">GitHub</p>
-                </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
