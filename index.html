@@ -28,7 +28,12 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/icon/hiro.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/icon/AV_iconD.png"
+      sizes="32x32"
+    />
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -42,16 +47,16 @@
 
   <body>
     <!-- Header and Navigation Bar -->
-    <header class="py-2 border-bottom border-secondary fixed-top bg-black">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <!-- Brand -->
-          <a
-            class="navbar-brand fw-bold"
-            style="color: var(--white)"
-            href="#home"
-          >
-            Hiro Setsuya
+          <a class="navbar-brand fw-bold" href="#home">
+            <img
+              src="assets/icon/AV_iconD.png"
+              alt="AV_icon"
+              width="32px"
+            />Hiro Setsuya
           </a>
 
           <!-- Regular navbar collapse for large screens -->
@@ -164,13 +169,13 @@
           <div class="row align-items-center">
             <!-- Left Side: Text -->
             <div class="col-12 col-lg-8 text-center text-lg-start">
-              <h5 style="color: var(--primary-red)">
+              <h5 class="accent-text">
                 <i class="bi bi-person-bounding-box"></i> Hello, I'm
               </h5>
               <h1 class="fw-bold">Adrian Vincent Javillo</h1>
               <h3 class="fw-bold">
                 And I'm a
-                <span id="typing-text" style="color: var(--primary-red)"></span>
+                <span id="typing-text" class="accent-text"></span>
               </h3>
               <p class="lead">
                 I'm a BSIT student and aspiring Full-Stack Web Developer with a
@@ -242,7 +247,7 @@
             <!-- Right Side: Image -->
             <div class="col-12 col-lg-4 text-center">
               <div
-                class="image-placeholder rounded-circle overflow-hidden mx-auto"
+                class="image-placeholder rounded-circle overflow-hidden mx-auto shadow-lg"
                 style="max-width: 400px"
               >
                 <img
@@ -259,7 +264,7 @@
       <!-- About Section -->
       <section
         class="py-5 fade-in-up"
-        style="background-color: var(--dark)"
+        style="background-color: var(--background-primary)"
         id="about"
       >
         <div class="container">
@@ -267,7 +272,7 @@
             <div
               class="col-lg-5 d-flex justify-content-center justify-content-lg-start"
             >
-              <div class="image-placeholder">
+              <div class="image-placeholder shadow-lg">
                 <img
                   src="assets/img/hiro4.png"
                   alt="About Me"
@@ -276,9 +281,7 @@
               </div>
             </div>
             <div class="col-lg-7">
-              <h5 style="color: var(--primary-red)">
-                <i class="bi bi-person"></i> About
-              </h5>
+              <h5 class="accent-text"><i class="bi bi-person"></i> About</h5>
               <h2 class="fw-bold">Who Am I</h2>
               <p>
                 I’m passionate about web development, focusing on building
@@ -290,11 +293,11 @@
               <!-- Tech Stack Section -->
               <section
                 class="py-5 fade-in-up"
-                style="background-color: var(--dark)"
+                style="background-color: var(--background-primary)"
                 id="techstack"
               >
                 <div class="container">
-                  <h5 style="color: var(--primary-red)">
+                  <h5 class="accent-text">
                     <i class="bi bi-layers"></i> Tech Stack
                   </h5>
                   <h2 class="fw-bold mb-4">What I Work With</h2>
@@ -302,8 +305,8 @@
                   <div class="row g-4">
                     <!-- Front-End Card -->
                     <div class="col-12 col-md-6 col-lg-6 d-flex">
-                      <div class="p-4 rounded text-center tech-card flex-fill">
-                        <h5 class="fw-bold mb-3" style="color: var(--white)">
+                      <div class="p-4 rounded tech-card flex-fill shadow-lg">
+                        <h5 class="fw-bold mb-3">
                           <i class="bi bi-palette"></i> Front-End
                         </h5>
                         <div
@@ -333,8 +336,8 @@
 
                     <!-- Back-End Card -->
                     <div class="col-12 col-md-6 col-lg-6 d-flex">
-                      <div class="p-4 rounded text-center tech-card flex-fill">
-                        <h5 class="fw-bold mb-3" style="color: var(--white)">
+                      <div class="p-4 rounded tech-card flex-fill shadow-lg">
+                        <h5 class="fw-bold mb-3">
                           <i class="bi bi-gear"></i> Back-End
                         </h5>
                         <div
@@ -358,8 +361,8 @@
 
                     <!-- Programming Languages Card -->
                     <div class="col-12 col-md-6 col-lg-6 d-flex">
-                      <div class="p-4 rounded text-center tech-card flex-fill">
-                        <h5 class="fw-bold mb-3" style="color: var(--white)">
+                      <div class="p-4 rounded tech-card flex-fill shadow-lg">
+                        <h5 class="fw-bold mb-3">
                           <i class="bi bi-terminal"></i> Programming Languages
                         </h5>
                         <div
@@ -387,8 +390,8 @@
 
                     <!-- Tools Card -->
                     <div class="col-12 col-md-6 col-lg-6 d-flex">
-                      <div class="p-4 rounded text-center tech-card flex-fill">
-                        <h5 class="fw-bold mb-3" style="color: var(--white)">
+                      <div class="p-4 rounded tech-card flex-fill shadow-lg">
+                        <h5 class="fw-bold mb-3">
                           <i class="bi bi-tools"></i> Tools
                         </h5>
                         <div
@@ -420,14 +423,12 @@
       <!-- Skills Section -->
       <section class="py-5 fade-in-up" id="skills">
         <div class="container text-center">
-          <h5 style="color: var(--primary-red)">
-            <i class="bi bi-tools"></i> Skills
-          </h5>
+          <h5 class="accent-text"><i class="bi bi-tools"></i> Skills</h5>
           <h2 class="fw-bold mb-5">What Can I Do</h2>
           <div class="row g-4">
             <!-- Web Development -->
             <div class="col-md-4">
-              <div class="p-4 rounded h-100 skills-card">
+              <div class="p-4 rounded h-100 skills-card shadow-lg">
                 <i class="bi bi-code-slash fs-2 icon"></i>
                 <h5 class="mt-3">Web Development</h5>
                 <p>
@@ -438,7 +439,7 @@
             </div>
             <!-- Clean Code -->
             <div class="col-md-4">
-              <div class="p-4 rounded h-100 skills-card">
+              <div class="p-4 rounded h-100 skills-card shadow-lg">
                 <i class="bi bi-check2-square fs-2 icon"></i>
                 <h5 class="mt-3">Clean Code</h5>
                 <p>
@@ -449,7 +450,7 @@
             </div>
             <!-- Problem Solving -->
             <div class="col-md-4">
-              <div class="p-4 rounded h-100 skills-card">
+              <div class="p-4 rounded h-100 skills-card shadow-lg">
                 <i class="bi bi-lightbulb fs-2 icon"></i>
                 <h5 class="mt-3">Problem Solving</h5>
                 <p>
@@ -460,7 +461,7 @@
             </div>
             <!-- Leadership -->
             <div class="col-md-4">
-              <div class="p-4 rounded h-100 skills-card">
+              <div class="p-4 rounded h-100 skills-card shadow-lg">
                 <i class="bi bi-people fs-2 icon"></i>
                 <h5 class="mt-3">Leadership</h5>
                 <p>
@@ -471,7 +472,7 @@
             </div>
             <!-- Communication -->
             <div class="col-md-4">
-              <div class="p-4 rounded h-100 skills-card">
+              <div class="p-4 rounded h-100 skills-card shadow-lg">
                 <i class="bi bi-chat-dots fs-2 icon"></i>
                 <h5 class="mt-3">Communication</h5>
                 <p>
@@ -482,7 +483,7 @@
             </div>
             <!-- Flexibility -->
             <div class="col-md-4">
-              <div class="p-4 rounded h-100 skills-card">
+              <div class="p-4 rounded h-100 skills-card shadow-lg">
                 <i class="bi bi-arrows-move fs-2 icon"></i>
                 <h5 class="mt-3">Flexibility</h5>
                 <p>
@@ -498,18 +499,18 @@
       <!-- Projects Section -->
       <section
         class="py-5 fade-in-up"
-        style="background-color: var(--dark)"
+        style="background-color: var(--background-primary)"
         id="projects"
       >
         <div class="container text-center">
-          <h5 class="fw-bold mb-4" style="color: var(--primary-red)">
+          <h5 class="fw-bold mb-4 accent-text">
             <i class="bi bi-briefcase"></i> Projects
           </h5>
           <h2 class="fw-bold mb-4">My Portfolio</h2>
           <div class="row g-4">
             <!-- Project Card 1 -->
             <div class="col-md-6 col-lg-4">
-              <div class="p-4 rounded h-100 project-card">
+              <div class="p-4 rounded h-100 project-card shadow-lg">
                 <i class="bi bi-key fs-2 icon"></i>
                 <h5>Password Generator</h5>
                 <p>
@@ -520,10 +521,6 @@
                   class="btn"
                   href="https://password-generatorhs.netlify.app/"
                   target="_blank"
-                  style="
-                    background-color: var(--primary-red);
-                    color: var(--white);
-                  "
                   role="button"
                   >Live Demo <i class="bi bi-globe"></i
                 ></a>
@@ -531,7 +528,7 @@
             </div>
             <!-- Project Card 2 -->
             <div class="col-md-6 col-lg-4">
-              <div class="p-4 rounded h-100 project-card">
+              <div class="p-4 rounded h-100 project-card shadow-lg">
                 <i class="bi bi-cloud-sun fs-2 icon"></i>
                 <h5>Weather Update</h5>
                 <p>
@@ -543,10 +540,6 @@
                   class="btn"
                   href="https://weather-updatehs.netlify.app/"
                   target="_blank"
-                  style="
-                    background-color: var(--primary-red);
-                    color: var(--white);
-                  "
                   role="button"
                   >Live Demo <i class="bi bi-globe"></i
                 ></a>
@@ -554,7 +547,7 @@
             </div>
             <!-- Project Card 3 -->
             <div class="col-md-6 col-lg-4">
-              <div class="p-4 rounded h-100 project-card">
+              <div class="p-4 rounded h-100 project-card shadow-lg">
                 <i class="bi bi-envelope-at fs-2 icon"></i>
                 <h5>Email Gateway</h5>
                 <p>
@@ -566,10 +559,6 @@
                   class="btn"
                   href="https://email-gateway.netlify.app/"
                   target="_blank"
-                  style="
-                    background-color: var(--primary-red);
-                    color: var(--white);
-                  "
                   role="button"
                   >Live Demo <i class="bi bi-globe"></i
                 ></a>
@@ -582,25 +571,21 @@
 
     <!-- Footer -->
     <footer>
-      <section
-        class="py-3 text-center"
-        style="background-color: var(--secondary-dark)"
-      >
+      <section class="text-center">
         <div class="container">
-          <p class="mb-2" style="color: var(--primary-red)">
-            © 2025 Hiro Setsuya
+          <p class="mb-2 accent-text">
+            <img
+              src="assets/icon/AV_iconD.png"
+              alt="AV_icon"
+              width="48px"
+            />&copy; 2025 Adrian Vincent Javillo. All rights reserved.
           </p>
           <div class="d-flex justify-content-center gap-3">
-            <a
-              href="https://github.com/Hiro-Setsuya"
-              class="text-light"
-              target="_blank"
-            >
+            <a href="https://github.com/Hiro-Setsuya" target="_blank">
               <i class="bi bi-github fs-4"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/adrian-vincent-j-60aa492a4/"
-              class="text-light"
               target="_blank"
               ><i class="bi bi-linkedin fs-4"></i
             ></a>
