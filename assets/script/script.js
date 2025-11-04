@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("theme-toggle");
   const themeToggleMobile = document.getElementById("theme-toggle-mobile");
 
-  let isDark = true;
+  // Get saved theme or default to dark
+  let isDark = localStorage.getItem("theme") !== "light";
 
   function updateTheme() {
     const icon = isDark ? "bi-sun" : "bi-moon";
@@ -63,8 +64,16 @@ document.addEventListener("DOMContentLoaded", () => {
       t.textContent = text;
     });
 
-    document.body.classList.toggle("dark-theme", isDark);
-    document.body.classList.toggle("light-theme", !isDark);
+    if (isDark) {
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
+    }
+
+    // Save theme preference
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   }
 
   function toggleTheme() {
@@ -75,5 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
   themeToggle.addEventListener("click", toggleTheme);
   themeToggleMobile.addEventListener("click", toggleTheme);
 
+  // Initialize theme on page load
   updateTheme();
 });
