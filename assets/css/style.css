@@ -358,7 +358,6 @@ header {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 1rem;
 }
 
 /* Tech card styling */
