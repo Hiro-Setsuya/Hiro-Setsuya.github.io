@@ -507,6 +507,16 @@ footer {
   border-top: 1px solid var(--glass-border);
   transition: all 0.3s ease;
   box-shadow: 0 -4px 16px var(--glass-shadow);
+  padding: 1rem 0;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+footer img {
+  width: 32px;
 }
 
 footer a {
@@ -515,8 +525,12 @@ footer a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 0.5rem;
+}
+
+footer a i {
+  font-size: 1.25rem;
 }
 
 footer a:hover {
