@@ -72,6 +72,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("light-theme");
     }
 
+    // Update logo icons
+    const logoIcon = isDark
+      ? "assets/icon/AV_iconD.png"
+      : "assets/icon/AV_iconL.png";
+    const logoImages = document.querySelectorAll('img[src*="AV_icon"]');
+    logoImages.forEach((img) => {
+      img.src = logoIcon;
+    });
+
     // Save theme preference
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
