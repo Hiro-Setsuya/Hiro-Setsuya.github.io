@@ -420,6 +420,13 @@ header {
 /* Center button in project card */
 .project-card a.btn {
   align-self: center;
+  min-width: 120px;
+}
+
+/* Project card button container */
+.project-card .d-flex {
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 /* Hover effect for project card */
