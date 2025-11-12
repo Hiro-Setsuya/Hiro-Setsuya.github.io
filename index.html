@@ -171,11 +171,33 @@
     <!-- Main Content -->
     <main class="mt-5">
       <!-- Introduction Section -->
-      <section class="py-5 fade-in-up" id="home">
+      <section
+        class="fade-in-up d-flex align-items-center"
+        id="home"
+        style="min-height: calc(100vh - 140px)"
+      >
         <div class="container">
-          <div class="row align-items-center">
-            <!-- Left Side: Text -->
-            <div class="col-12 col-lg-8 text-center text-lg-start">
+          <div class="row align-items-center justify-content-center">
+            <!-- Right Side: Image (appears first on mobile) -->
+            <div
+              class="col-12 col-lg-4 text-center order-1 order-lg-2 mb-4 mb-lg-0"
+            >
+              <div
+                class="image-placeholder rounded-circle overflow-hidden mx-auto shadow-lg"
+                style="max-width: 350px"
+              >
+                <img
+                  src="assets/img/hiro3.png"
+                  alt="Hiro Setsuya"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Left Side: Text (appears second on mobile) -->
+            <div
+              class="col-12 col-lg-8 text-center text-lg-start order-2 order-lg-1"
+            >
               <h5 class="accent-text">
                 <i class="bi bi-person-bounding-box"></i> Hello, I'm
               </h5>
@@ -192,7 +214,7 @@
                 functionality.
               </p>
               <div
-                class="d-flex justify-content-center justify-content-lg-start mt-4 gap-2 mb-5 social-links"
+                class="d-flex justify-content-center justify-content-lg-start mt-4 gap-2 mb-3 mb-lg-4 social-links"
               >
                 <a
                   href="https://www.facebook.com/profile.php?id=100092852844025"
@@ -248,20 +270,6 @@
                 >
                   <i class="bi bi-linkedin"></i>
                 </a>
-              </div>
-            </div>
-
-            <!-- Right Side: Image -->
-            <div class="col-12 col-lg-4 text-center">
-              <div
-                class="image-placeholder rounded-circle overflow-hidden mx-auto shadow-lg"
-                style="max-width: 400px"
-              >
-                <img
-                  src="assets/img/hiro3.png"
-                  alt="Hiro Setsuya"
-                  class="img-fluid"
-                />
               </div>
             </div>
           </div>
