@@ -14,34 +14,40 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeElements.forEach((el) => fadeObserver.observe(el));
 
   // Typing effect for role titles
-  const roles = ["Web Developer", "Full-Stack Developer", "Third-Year Student"];
   const typingText = document.getElementById("typing-text");
 
-  let roleIndex = 0;
-  let charIndex = 0;
-  let deleting = false;
+  if (typingText) {
+    const roles = [
+      "Web Developer",
+      "Full-Stack Developer",
+      "Third-Year Student",
+    ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
 
-  const typingSpeed = 100;
-  const pauseBetween = 1500;
+    const typingSpeed = 100;
+    const pauseBetween = 1500;
 
-  function type() {
-    const current = roles[roleIndex];
-    typingText.textContent = current.slice(
-      0,
-      deleting ? charIndex-- : charIndex++
-    );
+    function type() {
+      const current = roles[roleIndex];
+      typingText.textContent = current.slice(
+        0,
+        deleting ? charIndex-- : charIndex++
+      );
 
-    if (!deleting && charIndex === current.length) {
-      setTimeout(() => (deleting = true), pauseBetween);
-    } else if (deleting && charIndex === 0) {
-      deleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
+      if (!deleting && charIndex === current.length) {
+        setTimeout(() => (deleting = true), pauseBetween);
+      } else if (deleting && charIndex === 0) {
+        deleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+
+      setTimeout(type, deleting ? typingSpeed / 2 : typingSpeed);
     }
 
-    setTimeout(type, deleting ? typingSpeed / 2 : typingSpeed);
+    type();
   }
-
-  type();
 
   // Theme toggle functionality
   const themeToggle = document.getElementById("theme-toggle");
@@ -73,12 +79,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Update logo icons
-    const logoIcon = isDark
-      ? "assets/icon/AV_iconD.png"
-      : "assets/icon/AV_iconL.png";
     const logoImages = document.querySelectorAll('img[src*="AV_icon"]');
     logoImages.forEach((img) => {
-      img.src = logoIcon;
+      const currentSrc = img.getAttribute("src");
+      const iconFileName = isDark ? "AV_iconD.png" : "AV_iconL.png";
+
+      // Replace only the filename
+      if (currentSrc.includes("../assets/icon/")) {
+        // For pages
+        img.src = `../assets/icon/${iconFileName}`;
+      } else if (currentSrc.includes("assets/icon/")) {
+        // For index.html
+        img.src = `assets/icon/${iconFileName}`;
+      }
     });
 
     // Save theme preference
@@ -90,8 +103,13 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTheme();
   }
 
-  themeToggle.addEventListener("click", toggleTheme);
-  themeToggleMobile.addEventListener("click", toggleTheme);
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme);
+  }
+
+  if (themeToggleMobile) {
+    themeToggleMobile.addEventListener("click", toggleTheme);
+  }
 
   // Initialize theme on page load
   updateTheme();
